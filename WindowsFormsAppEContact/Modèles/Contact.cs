@@ -19,20 +19,22 @@ namespace WindowsFormsAppEContact.Modèles
        
           public string Genre { get; set; }
 
-        public string UrlPhoto { get; set; }
+        public byte[] Photo { get; set; }
 
-        public Contact(string nomcomplet, DateTime datenaiss, string email, string tel, string genre, string urlPhoto)
+        public Contact(string nomcomplet, DateTime datenaiss, string email, string tel, string genre, byte[] Photo)
         {
             Nomcomplet = nomcomplet;
             this.Datenaiss = datenaiss;
             this.Email = email;
             this.Tel = tel;
             this.Genre = genre;
-            UrlPhoto = urlPhoto;
+            this.Photo = Photo;
+        }
+        public Contact()
+        {
 
         }
-
-        public Contact()
+       
 
 
     }
