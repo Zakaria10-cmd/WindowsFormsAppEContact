@@ -46,18 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs">
+    <Compile Include="FrmAddContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmAddContact.Designer.cs">
+      <DependentUpon>FrmAddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListContact.Designer.cs">
+      <DependentUpon>frmListContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Modèles\Contact.cs" />
     <Compile Include="Modèles\DBContact.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAddContact.resx">
+      <DependentUpon>FrmAddContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListContact.resx">
+      <DependentUpon>frmListContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +98,179 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icônes\Agenda.jpg" />
+    <Content Include="Icônes\ajoutcmd.png" />
+    <Content Include="Icônes\ajouter new produit.jpg" />
+    <Content Include="Icônes\ajouter reçu.png" />
+    <Content Include="Icônes\Arabe.png" />
+    <Content Include="Icônes\armoiriesniger.gif" />
+    <Content Include="Icônes\ARRIER.jpg" />
+    <Content Include="Icônes\arriere plan.jpg" />
+    <Content Include="Icônes\ARRIERE.jpg" />
+    <Content Include="Icônes\ARRIEREimages.jpg" />
+    <Content Include="Icônes\arrierep.jpg" />
+    <Content Include="Icônes\arrierepl.jpg" />
+    <Content Include="Icônes\arrièrepla.jpg" />
+    <Content Include="Icônes\arrièreplanb.jpg" />
+    <Content Include="Icônes\bienvenue.png" />
+    <Content Include="Icônes\BL.jpg" />
+    <Content Include="Icônes\btn client.jpg" />
+    <Content Include="Icônes\calendrier.png" />
+    <Content Include="Icônes\chercher.png" />
+    <Content Include="Icônes\clients.jpg" />
+    <Content Include="Icônes\Clients1.jpg" />
+    <Content Include="Icônes\clit.jpg" />
+    <Content Include="Icônes\clit.png" />
+    <Content Include="Icônes\clé.png" />
+    <Content Include="Icônes\Cmd.jpg" />
+    <Content Include="Icônes\cmderegler.jpg" />
+    <Content Include="Icônes\cmdes.jpg" />
+    <Content Include="Icônes\Commande.jpg" />
+    <Content Include="Icônes\Connexion.png" />
+    <Content Include="Icônes\Contact.png" />
+    <Content Include="Icônes\Contacts.png" />
+    <Content Include="Icônes\CONVERTIR.png" />
+    <Content Include="Icônes\courriel.png" />
+    <Content Include="Icônes\download.png" />
+    <Content Include="Icônes\Editer.jpg" />
+    <Content Include="Icônes\Editer1.jpg" />
+    <Content Include="Icônes\English.png" />
+    <Content Include="Icônes\Enregistrer.jpg" />
+    <Content Include="Icônes\Envoyer.jpg" />
+    <Content Include="Icônes\Excel.png" />
+    <Content Include="Icônes\F.jpg" />
+    <Content Include="Icônes\facture regler.png" />
+    <Content Include="Icônes\facture.jpg" />
+    <Content Include="Icônes\Factures.jpg" />
+    <Content Include="Icônes\FF.jpg" />
+    <Content Include="Icônes\France.png" />
+    <Content Include="Icônes\G.STOCKS.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icônes\Gestion stock.mp4" />
+    <Content Include="Icônes\H.jpg" />
+    <Content Include="Icônes\HH.jpg" />
+    <Content Include="Icônes\Illustrations.jpg" />
+    <Content Include="Icônes\image.jpg" />
+    <Content Include="Icônes\images.jpg" />
+    <Content Include="Icônes\images1.jpg" />
+    <Content Include="Icônes\images100.jpg" />
+    <Content Include="Icônes\images101.jpg" />
+    <Content Include="Icônes\images102.jpg" />
+    <Content Include="Icônes\images103.jpg" />
+    <Content Include="Icônes\images11.jpg" />
+    <Content Include="Icônes\images12.jpg" />
+    <Content Include="Icônes\images14.png" />
+    <Content Include="Icônes\images15.png" />
+    <Content Include="Icônes\images16.png" />
+    <Content Include="Icônes\images19.jpg" />
+    <Content Include="Icônes\images20.png" />
+    <Content Include="Icônes\images23.png" />
+    <Content Include="Icônes\images24.jpg" />
+    <Content Include="Icônes\images25.jpg" />
+    <Content Include="Icônes\images26.jpg" />
+    <Content Include="Icônes\images29.png" />
+    <Content Include="Icônes\images30.jpg" />
+    <Content Include="Icônes\images31.jpg" />
+    <Content Include="Icônes\images33.jpg" />
+    <Content Include="Icônes\images36.png" />
+    <Content Include="Icônes\images39.jpg" />
+    <Content Include="Icônes\images4.jpg" />
+    <Content Include="Icônes\images40.png" />
+    <Content Include="Icônes\images43.jpg" />
+    <Content Include="Icônes\images44.jpg" />
+    <Content Include="Icônes\images45.png" />
+    <Content Include="Icônes\images46.jpg" />
+    <Content Include="Icônes\images47.png" />
+    <Content Include="Icônes\images48.jpg" />
+    <Content Include="Icônes\images49.jpg" />
+    <Content Include="Icônes\images51.jpg" />
+    <Content Include="Icônes\images52.jpg" />
+    <Content Include="Icônes\images53.jpg" />
+    <Content Include="Icônes\images54.jpg" />
+    <Content Include="Icônes\images55.jpg" />
+    <Content Include="Icônes\images56.jpg" />
+    <Content Include="Icônes\images57.jpg" />
+    <Content Include="Icônes\images58.jpg" />
+    <Content Include="Icônes\images59.png" />
+    <Content Include="Icônes\images6.png" />
+    <Content Include="Icônes\images60.png" />
+    <Content Include="Icônes\images61.png" />
+    <Content Include="Icônes\images62.png" />
+    <Content Include="Icônes\images63.jpg" />
+    <Content Include="Icônes\images64.jpg" />
+    <Content Include="Icônes\images68.jpg" />
+    <Content Include="Icônes\images69.jpg" />
+    <Content Include="Icônes\images7.jpg" />
+    <Content Include="Icônes\images72.jpg" />
+    <Content Include="Icônes\images73.jpg" />
+    <Content Include="Icônes\images74.jpg" />
+    <Content Include="Icônes\images75.jpg" />
+    <Content Include="Icônes\images76.png" />
+    <Content Include="Icônes\images77.jpg" />
+    <Content Include="Icônes\images78.jpg" />
+    <Content Include="Icônes\images79.png" />
+    <Content Include="Icônes\images80.jpg" />
+    <Content Include="Icônes\images81.jpg" />
+    <Content Include="Icônes\images82.png" />
+    <Content Include="Icônes\images83.png" />
+    <Content Include="Icônes\images84.png" />
+    <Content Include="Icônes\images85.png" />
+    <Content Include="Icônes\images86.png" />
+    <Content Include="Icônes\images87.png" />
+    <Content Include="Icônes\images88.png" />
+    <Content Include="Icônes\images89.png" />
+    <Content Include="Icônes\images9.jpg" />
+    <Content Include="Icônes\images90.jpg" />
+    <Content Include="Icônes\images91.jpg" />
+    <Content Include="Icônes\images92.jpg" />
+    <Content Include="Icônes\images93.png" />
+    <Content Include="Icônes\images94.png" />
+    <Content Include="Icônes\images95.jpg" />
+    <Content Include="Icônes\images96.jpg" />
+    <Content Include="Icônes\images97.jpg" />
+    <Content Include="Icônes\images98.png" />
+    <Content Include="Icônes\images99.jpg" />
+    <Content Include="Icônes\index.jpg" />
+    <Content Include="Icônes\index1.jpg" />
+    <Content Include="Icônes\index11.jpg" />
+    <Content Include="Icônes\index12.jpg" />
+    <Content Include="Icônes\index18.jpg" />
+    <Content Include="Icônes\index19.png" />
+    <Content Include="Icônes\index2.jpg" />
+    <Content Include="Icônes\index20.jpg" />
+    <Content Include="Icônes\index22.jpg" />
+    <Content Include="Icônes\index23.jpg" />
+    <Content Include="Icônes\index24.jpg" />
+    <Content Include="Icônes\index25.jpg" />
+    <Content Include="Icônes\index26.jpg" />
+    <Content Include="Icônes\index28.jpg" />
+    <Content Include="Icônes\index29.png" />
+    <Content Include="Icônes\index3.jpg" />
+    <Content Include="Icônes\index30.jpg" />
+    <Content Include="Icônes\index31.jpg" />
+    <Content Include="Icônes\index32.png" />
+    <Content Include="Icônes\index4.jpg" />
+    <Content Include="Icônes\index4.png" />
+    <Content Include="Icônes\index5.jpg" />
+    <Content Include="Icônes\index6.jpg" />
+    <Content Include="Icônes\Info.jpg" />
+    <Content Include="Icônes\modifier.jpg" />
+    <Content Include="Icônes\nouvelle Commande.png" />
+    <Content Include="Icônes\PDF..jpg" />
+    <Content Include="Icônes\PDF.jpg" />
+    <Content Include="Icônes\produits  en stock.jpg" />
+    <Content Include="Icônes\raports.jpg" />
+    <Content Include="Icônes\Rapport.jpg" />
+    <Content Include="Icônes\rapport.png" />
+    <Content Include="Icônes\Reçu.jpg" />
+    <Content Include="Icônes\setup.icon.jpg" />
+    <Content Include="Icônes\support clients.jpg" />
+    <Content Include="Icônes\Supprimer.jpg" />
+    <Content Include="Icônes\validercmd.jpg" />
+    <Content Include="Icônes\Zak.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
