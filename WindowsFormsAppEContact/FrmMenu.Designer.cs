@@ -49,7 +49,7 @@
             this.pMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pMenu.Location = new System.Drawing.Point(0, 0);
             this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(162, 600);
+            this.pMenu.Size = new System.Drawing.Size(156, 600);
             this.pMenu.TabIndex = 0;
             // 
             // btnQuit
@@ -112,17 +112,20 @@
             // 
             // pContent
             // 
+            this.pContent.BackColor = System.Drawing.Color.DarkGray;
+            this.pContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pContent.Location = new System.Drawing.Point(162, 0);
+            this.pContent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pContent.Location = new System.Drawing.Point(156, 0);
             this.pContent.Name = "pContent";
-            this.pContent.Size = new System.Drawing.Size(678, 600);
+            this.pContent.Size = new System.Drawing.Size(799, 600);
             this.pContent.TabIndex = 1;
             // 
             // FrmMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(840, 600);
+            this.ClientSize = new System.Drawing.Size(955, 600);
             this.Controls.Add(this.pContent);
             this.Controls.Add(this.pMenu);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

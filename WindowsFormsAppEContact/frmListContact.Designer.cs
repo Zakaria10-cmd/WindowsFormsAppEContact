@@ -31,7 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListContact));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvContact = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContact)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -54,16 +57,37 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Liste Contact";
             // 
+            // dgvContact
+            // 
+            this.dgvContact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvContact.Location = new System.Drawing.Point(0, 42);
+            this.dgvContact.Name = "dgvContact";
+            this.dgvContact.Size = new System.Drawing.Size(949, 386);
+            this.dgvContact.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(495, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 21);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "label2";
+            // 
             // frmListContact
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dgvContact);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmListContact";
-            this.Size = new System.Drawing.Size(1085, 969);
+            this.Size = new System.Drawing.Size(1085, 552);
+            this.Load += new System.EventHandler(this.frmListContact_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContact)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,5 +97,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvContact;
+        private System.Windows.Forms.Label label2;
     }
 }
