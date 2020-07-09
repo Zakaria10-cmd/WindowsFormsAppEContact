@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListContact));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvContact = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
+            this.nbContact = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContact)).BeginInit();
             this.SuspendLayout();
@@ -59,25 +60,35 @@
             // 
             // dgvContact
             // 
+            this.dgvContact.BackgroundColor = System.Drawing.Color.White;
+            this.dgvContact.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvContact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvContact.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvContact.Location = new System.Drawing.Point(0, 42);
             this.dgvContact.Name = "dgvContact";
-            this.dgvContact.Size = new System.Drawing.Size(949, 386);
+            this.dgvContact.Size = new System.Drawing.Size(895, 386);
             this.dgvContact.TabIndex = 4;
             // 
-            // label2
+            // nbContact
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(495, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 21);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
+            this.nbContact.AutoSize = true;
+            this.nbContact.Location = new System.Drawing.Point(495, 0);
+            this.nbContact.Name = "nbContact";
+            this.nbContact.Size = new System.Drawing.Size(99, 21);
+            this.nbContact.TabIndex = 5;
+            this.nbContact.Text = "nbContact";
             // 
             // frmListContact
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.nbContact);
             this.Controls.Add(this.dgvContact);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -98,6 +109,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvContact;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label nbContact;
+       
     }
 }

@@ -26,6 +26,9 @@ namespace WindowsFormsAppEContact
             dgvContact.AutoResizeColumns();
             dgvContact.AllowUserToResizeColumns = true;
             dgvContact.AllowUserToOrderColumns = true;
+            dgvContact.Columns["photo"].Visible = false;
+            dgvContact.AllowUserToAddRows=false;
+            nbContact.Text = "Nombre Contact: " + dgvContact.Rows.Count;
         }
     }
 }
